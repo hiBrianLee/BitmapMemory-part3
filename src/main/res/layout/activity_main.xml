@@ -1,0 +1,39 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.tigerpenguin.lab.bitmapmemory.part3.MainActivity"
+              tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <Button
+                style="@style/buttonStyle"
+                android:text="No Hardware Acceleration"
+                android:onClick="onNoHardwareClick"/>
+
+        <Button
+                style="@style/buttonStyle"
+                android:text="Maximize Hardware Acceleration"
+                android:onClick="onMaxHardwareClick"/>
+
+        <Button
+                style="@style/buttonStyle"
+                android:text="Selective Hardware Acceleration"
+                android:onClick="onSelectiveHardwareClick"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="http://lab.tigerpenguin.com"
+                android:gravity="center"
+                android:autoLink="web"/>
+
+    </LinearLayout>
+
+</ScrollView>
